@@ -1,0 +1,12 @@
+toml
+[versions]
+# ... keep existing versions
+hilt = "2.52"
+googleServices = "4.4.2"
+
+[plugins]
+# ... keep existing plugins
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+google-services = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+
