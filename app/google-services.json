@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "562619953272",
+    "project_id": "studio-1244295511-5c8fc",
+    "storage_bucket": "studio-1244295511-5c8fc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562619953272:android:8b46abf28dc1015877bd8d",
+        "android_client_info": {
+          "package_name": "com.kmhinfratech.safetytaskmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBflH4iNjfqa9-1CpioY24VOr5ibJDlXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

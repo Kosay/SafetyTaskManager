@@ -1,23 +1,29 @@
 package com.kmhinfratech.safetytaskmanager
 
-class SplashActivity : AppCompatActivity() {
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 
+class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash)
 
-        lifecycleScope.launch {
-            delay(1200)
+        val auth = FirebaseAuth.getInstance()
 
-            val isLoggedIn = AuthPreferences.isLoggedIn(this@SplashActivity)
-
-            val intent = if (isLoggedIn) {
-                Intent(this@SplashActivity, MainActivity::class.java)
+        Handler(Looper.getMainLooper()).postDelayed({
+            // Check if user is already logged in
+            if (auth.currentUser != null) {
+                // User is logged in, go to Dashboard
+                startActivity(Intent(this, MainActivity::class.java))
             } else {
-                Intent(this@SplashActivity, LoginActivity::class.java)
+                // No user found, go to Login
+                startActivity(Intent(this, LoginActivity::class.java))
             }
-
-            startActivity(intent)
             finish()
-        }
+        }, 3000)
     }
 }

@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.kmhinfratech.safetytaskmanager" />
+                  <option name="mobileSdkAppId" value="1:562619953272:android:8b46abf28dc1015877bd8d" />
+                  <option name="projectId" value="studio-1244295511-5c8fc" />
+                  <option name="projectNumber" value="562619953272" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
